@@ -17,6 +17,34 @@ function HomePage() {
     { src: "https://go.growthschool.io/images/Group-3132.png", alt: "Logo 11" },
     { src: "https://go.growthschool.io/images/Group-3132.png", alt: "Logo 12" },
   ];
+
+  const mentors = [
+    {
+      name: "Arush Chopra",
+      title: "Chief Executive Officer of Just Herbs",
+      image: "https://go.growthschool.io/images/b94889aaf35588d05c3091139c8b88f1-p-500.png",
+    },
+    {
+      name: "Sulay Lavsi",
+      title: "Founder of Bummer",
+      image: "https://go.growthschool.io/images/b94889aaf35588d05c3091139c8b88f1-p-500.png",
+    },
+    {
+      name: "Amit Singal",
+      title: "Partner at Fluid Ventures",
+      image: "https://go.growthschool.io/images/b94889aaf35588d05c3091139c8b88f1-p-500.png",
+    },
+    {
+      name: "Sana Shaik",
+      title: "Director of Flipkart Ads and Co-founder of ScaleToPeak",
+      image: "https://go.growthschool.io/images/b94889aaf35588d05c3091139c8b88f1-p-500.png",
+    },
+    {
+      name: "Shaantnu Anand",
+      title: "Ex-Yoga Bar and Ex-DaMENSCH",
+      image: "https://go.growthschool.io/images/b94889aaf35588d05c3091139c8b88f1-p-500.png",
+    },
+  ];
   const participants = [
     "Early stage D2C founders",
     "Aspiring D2C founders",
@@ -155,67 +183,154 @@ function HomePage() {
           </div>
         </div>
         <div className="bg-black text-white min-h-screen flex flex-col items-center justify-center p-4">
-      <h1 className="text-4xl font-bold text-center mb-4">D2C Mentorship Program</h1>
-      <p className="text-lg text-center mb-8">
-        So, to help you make the best of this opportunity while building and scaling your D2C brand, we’ve launched
-      </p>
+          <h1 className="text-4xl font-bold text-center mb-4">
+            D2C Mentorship Program
+          </h1>
+          <p className="text-lg text-center mb-8">
+            So, to help you make the best of this opportunity while building and
+            scaling your D2C brand, we’ve launched
+          </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl">
-        <div className="bg-gray-800 p-4 rounded-lg text-center">8-Weeks Program</div>
-        <div className="bg-gray-800 p-4 rounded-lg text-center">20+ hours of live learning sessions</div>
-        <div className="bg-gray-800 p-4 rounded-lg text-center">Lifetime Access to D2C community</div>
-        <div className="bg-gray-800 p-4 rounded-lg text-center">1:1 Exclusive Mentorship Opportunities</div>
-        <div className="bg-gray-800 p-4 rounded-lg text-center">Access to Offline events</div>
-        <div className="bg-gray-800 p-4 rounded-lg text-center">6 Assignments</div>
-        <div className="bg-gray-800 p-4 rounded-lg text-center">Integrate Gen AI Capabilities</div>
-        <div className="bg-gray-800 p-4 rounded-lg text-center">2–3 Hours of weekly commitment</div>
-      </div>
-      
-
-      
-     
-    </div>
-
-
-
-    <div className="bg-black text-white py-8 flex flex-col items-center">
-      <h2 className="text-3xl font-bold mb-8 text-center">Who is this program for?</h2>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl">
-        {participants.map((participant, index) => (
-          <div
-            key={index}
-            className="bg-gray-800 p-4 rounded-lg flex items-center space-x-2"
-          >
-            <span className="text-green-500">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-            </span>
-            <span>{participant}</span>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl">
+            <div className="bg-gray-800 p-4 rounded-lg text-center">
+              8-Weeks Program
+            </div>
+            <div className="bg-gray-800 p-4 rounded-lg text-center">
+              20+ hours of live learning sessions
+            </div>
+            <div className="bg-gray-800 p-4 rounded-lg text-center">
+              Lifetime Access to D2C community
+            </div>
+            <div className="bg-gray-800 p-4 rounded-lg text-center">
+              1:1 Exclusive Mentorship Opportunities
+            </div>
+            <div className="bg-gray-800 p-4 rounded-lg text-center">
+              Access to Offline events
+            </div>
+            <div className="bg-gray-800 p-4 rounded-lg text-center">
+              6 Assignments
+            </div>
+            <div className="bg-gray-800 p-4 rounded-lg text-center">
+              Integrate Gen AI Capabilities
+            </div>
+            <div className="bg-gray-800 p-4 rounded-lg text-center">
+              2–3 Hours of weekly commitment
+            </div>
           </div>
-        ))}
-      </div>
+        </div>
 
+        <div className="bg-black text-white py-8 flex flex-col items-center">
+          <h2 className="text-3xl font-bold mb-8 text-center">
+            Who is this program for?
+          </h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl">
+            {participants.map((participant, index) => (
+              <div
+                key={index}
+                className="bg-gray-800 p-4 rounded-lg flex items-center space-x-2"
+              >
+                <span className="text-green-500">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                </span>
+                <span>{participant}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="bg-black text-white py-12 px-6">
+          <h2 className="text-center text-3xl font-bold mb-8">
+            Learn from Industry-Leaders
+          </h2>
+          <p className="text-center text-lg mb-8">
+            Get direct mentorship from experts who’ve built and grown thriving
+            million-dollar D2C brands
+          </p>
+          <h3 className="text-center text-2xl font-semibold mb-6">
+            Meet your Program Director
+          </h3>
+
+          <div className="flex w-6/12 mx-72 flex-col items-center bg-gray-800 rounded-lg shadow-lg p-6">
+            {/* Circular image */}
+            <div className="w-32 h-32 mb-6">
+              <img
+                src="https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg"
+                alt="Arman Sood"
+                className="rounded-full border-4 border-blue-500"
+              />
+            </div>
+
+            <div className="text-center">
+              <h4 className="text-xl font-bold">Arman Sood</h4>
+
+              <p className="text-gray-400 mb-4">
+                Co-Founder at Sleepy Owl Coffee | Forbes 30 under 30
+              </p>
+              <p className="text-gray-300">
+                Hey there, I'm Arman Sood, co-founder of Sleepy Owl Coffee and
+                your mentor for this program. I began my journey during my
+                college days when my friend Ashwajeet Singh and I explored
+                various business ideas before stumbling upon the idea of Sleepy
+                Owl Coffee. Passionate about real coffee, we set out to
+                revolutionize India's coffee market with our Cold Brew Coffee.
+                Today, Sleepy Owl Coffee is a thriving brand, backed by notable
+                investors like DSG Consumer Partners and Rukam Capital. Named to
+                the prestigious Forbes 30 Under 30 list, I'm thrilled to share
+                all my learnings and insights with you during this program, and
+                I can't wait to see what we can achieve together.
+              </p>
+            </div>
+          </div>
+        </div>
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div className="bg-black text-white min-h-screen flex flex-col justify-between">
+      <main className="container mx-auto px-4 py-16">
+        <h1 className="text-4xl font-bold mb-12 text-center">Meet your Program Mentors</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+          {mentors.map((mentor, index) => (
+            <div key={index} className="bg-gray-800 p-6 rounded-lg text-center">
+              <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                <img src={mentor.image} alt={mentor.name} className="w-full h-full object-cover" />
+              </div>
+              <h2 className="text-xl font-bold mb-2">{mentor.name}</h2>
+              <p className="text-gray-300">{mentor.title}</p>
+            </div>
+          ))}
+        </div>
+        
+      </main>
       
 
 
     </div>
-
-
-
-
 
 
       </main>
