@@ -17,6 +17,15 @@ function HomePage() {
     { src: "https://go.growthschool.io/images/Group-3132.png", alt: "Logo 11" },
     { src: "https://go.growthschool.io/images/Group-3132.png", alt: "Logo 12" },
   ];
+  const participants = [
+    "Early stage D2C founders",
+    "Aspiring D2C founders",
+    "People working at D2C brand",
+    "Small business owners",
+    "Retail business owners wanting to go online",
+    "Agencies & Professionals working in the D2C ecosystem",
+    "Angels / Investors exploring the D2C market",
+  ];
 
   return (
     <div className="bg-black text-white min-h-screen flex flex-col justify-between items-center p-4 sm:p-6 relative">
@@ -70,7 +79,11 @@ function HomePage() {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-8 mb-8 sm:mb-12">
             {logos.map((logo, index) => (
               <div key={index} className="flex justify-center items-center">
-                <img src={logo.src} alt={logo.alt} className="h-8 sm:h-12 w-auto" />
+                <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  className="h-8 sm:h-12 w-auto"
+                />
               </div>
             ))}
           </div>
@@ -139,9 +152,72 @@ function HomePage() {
                 </p>
               </div>
             </div>
-            
           </div>
         </div>
+        <div className="bg-black text-white min-h-screen flex flex-col items-center justify-center p-4">
+      <h1 className="text-4xl font-bold text-center mb-4">D2C Mentorship Program</h1>
+      <p className="text-lg text-center mb-8">
+        So, to help you make the best of this opportunity while building and scaling your D2C brand, we’ve launched
+      </p>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl">
+        <div className="bg-gray-800 p-4 rounded-lg text-center">8-Weeks Program</div>
+        <div className="bg-gray-800 p-4 rounded-lg text-center">20+ hours of live learning sessions</div>
+        <div className="bg-gray-800 p-4 rounded-lg text-center">Lifetime Access to D2C community</div>
+        <div className="bg-gray-800 p-4 rounded-lg text-center">1:1 Exclusive Mentorship Opportunities</div>
+        <div className="bg-gray-800 p-4 rounded-lg text-center">Access to Offline events</div>
+        <div className="bg-gray-800 p-4 rounded-lg text-center">6 Assignments</div>
+        <div className="bg-gray-800 p-4 rounded-lg text-center">Integrate Gen AI Capabilities</div>
+        <div className="bg-gray-800 p-4 rounded-lg text-center">2–3 Hours of weekly commitment</div>
+      </div>
+      
+
+      
+     
+    </div>
+
+
+
+    <div className="bg-black text-white py-8 flex flex-col items-center">
+      <h2 className="text-3xl font-bold mb-8 text-center">Who is this program for?</h2>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl">
+        {participants.map((participant, index) => (
+          <div
+            key={index}
+            className="bg-gray-800 p-4 rounded-lg flex items-center space-x-2"
+          >
+            <span className="text-green-500">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+            </span>
+            <span>{participant}</span>
+          </div>
+        ))}
+      </div>
+
+      
+
+
+    </div>
+
+
+
+
+
+
       </main>
 
       {/* Footer */}
@@ -150,7 +226,10 @@ function HomePage() {
           <button className="bg-orange-500 text-white px-6 py-3 rounded-lg w-full sm:w-auto">
             Apply Now
           </button>
-          <a href="#" className="bg-blue-800 text-white px-6 py-3 rounded-lg w-full sm:w-auto text-center">
+          <a
+            href="#"
+            className="bg-blue-800 text-white px-6 py-3 rounded-lg w-full sm:w-auto text-center"
+          >
             Looking for team discount?
           </a>
         </div>
